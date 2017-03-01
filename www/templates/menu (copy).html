@@ -1,0 +1,59 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+
+
+    <!--&lt;!&ndash; TABS &ndash;&gt;-->
+    <!--<ion-tabs>-->
+
+      <!--&lt;!&ndash; Dashboard Tab &ndash;&gt;-->
+      <!--<ion-tab title="Work Order" icon-off="ion-ios-list-outline" icon-on="ion-ios-list" href="#/menu/home">-->
+        <!--<ion-nav-view name="tab-search"></ion-nav-view>-->
+      <!--</ion-tab>-->
+
+      <!--&lt;!&ndash; Chats Tab &ndash;&gt;-->
+      <!--<ion-tab title="Submitted" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper" href="#/menu/browse">-->
+        <!--<ion-nav-view name="tab-browse"></ion-nav-view>-->
+      <!--</ion-tab>-->
+
+      <!--&lt;!&ndash; Account Tab &ndash;&gt;-->
+      <!--<ion-tab title="Closed" icon-off="ion-android-checkbox-outline" icon-on="ion-android-checkbox-outline" href="#/menu/playlist">-->
+        <!--<ion-nav-view name="tab-playlists"></ion-nav-view>-->
+      <!--</ion-tab>-->
+
+    <!--</ion-tabs>-->
+
+
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Left</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>
+        <ion-item menu-close href="#/menu/home">
+          Home
+        </ion-item>
+        <ion-item menu-close href="#/menu/browse">
+          Browse
+        </ion-item>
+        <ion-item menu-close href="#/menu/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
