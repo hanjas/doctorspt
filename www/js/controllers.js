@@ -53,7 +53,64 @@ angular.module('starter.controllers', [])
   })
 
   .controller('doctorCtrl', function($scope, $stateParams) {
-    $scope.beforeRender = function ($view, $dates, $leftDate, $upDate, $rightDate) {
+      $scope.doctors = [{
+          name: 'Murukesh',
+          category: 'Orthodox'
+      },{
+          name: 'Suhail',
+          category: 'ENT'
+      },{
+          name: 'Hari Ram',
+          category: 'Allergist'
+      },{
+          name: 'Rinoy',
+          category: 'Dentist'
+      }];
+  })
 
-    };
+  .controller('BookingListCtrl', function($scope, $stateParams) {
+      $scope.bookings = [{
+          tokenno: 30,
+          date: '02.12.2016',
+          time: '12:30pm',
+          fees: '200rs'
+      }, {
+          tokenno: 10,
+          date: '12.12.2016',
+          time: '10:30pm',
+          fees: '200rs'
+      }, {
+          tokenno: 60,
+          date: '25.12.2016',
+          time: '01:00pm',
+          fees: '200rs'
+      }, {
+          tokenno: 30,
+          date: '02.01.2017',
+          time: '12:30pm',
+          fees: '200rs'
+      }];
+  })
+  .controller('HistoryCtrl', function($scope, $stateParams) {
+      $scope.bookings = [{
+          tokenno: 30,
+          date: '02.12.2016',
+          time: '12:30pm',
+          fees: '200rs'
+      }, {
+          tokenno: 10,
+          date: '12.12.2016',
+          time: '10:30pm',
+          fees: '200rs'
+      }, {
+          tokenno: 60,
+          date: '25.12.2016',
+          time: '01:00pm',
+          fees: '200rs'
+      }, {
+          tokenno: 30,
+          date: '02.01.2017',
+          time: '12:30pm',
+          fees: '200rs'
+      }];
   });

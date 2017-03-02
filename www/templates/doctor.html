@@ -1,6 +1,16 @@
-<ion-view >
+<ion-view title="Doctor">
   <ion-content>
-    <h1>DOCTOR</h1>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-left item-icon-right list list-inset" ng-repeat="doctor in doctors" type="item-text-wrap">
 
+        <h2>Doctor      : {{doctor.name}}</h2>
+        <h2>Category          : {{doctor.category}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </ion-view>

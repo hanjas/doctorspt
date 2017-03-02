@@ -56,7 +56,8 @@ angular.module('starter', ['ionic', 'ui.bootstrap.datetimepicker', 'ion-datetime
         url: '/history',
         views: {
           'menuContent': {
-            templateUrl: 'templates/history.html'
+            templateUrl: 'templates/history.html',
+            controller: 'HistoryCtrl'
           }
         }
       })
@@ -95,7 +96,7 @@ angular.module('starter', ['ionic', 'ui.bootstrap.datetimepicker', 'ion-datetime
       views: {
         'tab-bookinglist': {
           templateUrl: "templates/tabbookinglist.html",
-          // controller: 'PlaylistsCtrl'
+          controller: 'BookingListCtrl'
         }
       }
     });
